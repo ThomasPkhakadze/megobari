@@ -1,0 +1,127 @@
+/* Base styles */
+@import './base.css';
+
+/* Fonts */
+@import './fonts.css';
+
+/* Headers */
+@import './components/headers.css';
+
+/* About us */
+.about-us{
+    padding-top: 63px;
+    padding-bottom: 35px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.about-us > .title{
+    font-family: 'mont-semiBold';
+    font-size: 42px;
+    line-height: 55px;
+    color: var(--primary);
+    grid-column: 1/5;
+}
+.about-us > .title > span{
+    color: var(--secondary);
+    font-family: 'mont-bold';
+    position: relative;
+}
+.about-us > .title > span:after{
+    content: url('../img/magic-underline.svg');
+    position: absolute;
+    bottom: -21px;
+    left: -21px;
+}
+.about-us > .title > img{
+    transform: rotate(-5deg) translateY(20px); 
+}
+.about-us > .desc{
+    margin-top: 25px;
+    max-width: 731px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'mont-regular';
+    color: var(--dark-grey);
+    grid-row: 2;
+    grid-column: 1/4;
+}
+.about-us > .img{
+    margin-top: 45px;
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+.about-us > .services{
+    margin-top: 26px;
+    padding: 17px 15px 3px;
+    background: #aeccff1a;
+    border: 1px solid #aeccff80;
+    border-radius: 10px;
+    grid-row: 3;
+    grid-column: 1;
+}
+.about-us > .services > .service{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.about-us > .services > .service:not(:first-child){
+    margin-left: 30px;
+}
+.about-us > .services > .service:not(:first-child):before{
+    content: "";
+    height: 117px;
+    width: 1px;
+    background: #CEE2FF;
+    display: inline-block;
+    position: absolute;
+    left: -15px;
+}
+.about-us > .services > .service > .title{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary);
+    font-family: 'mont-bold';
+}
+.about-us > .services > .service > p{
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--dark-grey);
+    font-family: 'mont-regular';
+}
+.about-us > .services > .service img{
+    margin-bottom: 15px;
+}
+
+/* Responsives */
+@media (max-width:1200px){
+    /* Global classes */
+    .main-padding{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* Header */
+    .header{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .links li {
+        display: inline-block;
+        margin-right: 25px;
+    }
+}
+
+@media (max-width:912px){
+    /* Global classes */
+    .main-padding{
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+    /* Header */
+    .header{
+        justify-content: center;
+    }
+    .links, .order-now-btn{
+        display: none;
+    }
+}

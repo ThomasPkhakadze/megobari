@@ -1,0 +1,12 @@
+@font-face {
+  font-family: mont-bold;
+  src: url('/assets/fonts/Mont-Bold.otf');
+}
+@font-face {
+  font-family: mont-regular;
+  src: url('/assets/fonts/Mont-Regular.otf');
+}
+@font-face{
+  font-family: mont-semiBold;
+  src: url('/assets/fonts/Mont-SemiBold.otf')
+}

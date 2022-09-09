@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+:root{
+    --primary: #11346F;
+    --secondary: #197AFF;
+    --white: #fff;
+    --dark-grey:  #262626;
+}
+
+/* Global classes */
+.main-padding{
+    padding-left: 100px;
+    padding-right: 100px;
+}
