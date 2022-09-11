@@ -6,6 +6,7 @@
     --primary: #11346F;
     --secondary: #197AFF;
     --white: #fff;
+    --black: #000;
     --dark-grey:  #262626;
 }
 
@@ -13,4 +14,11 @@
 .main-padding{
     padding-left: 100px;
     padding-right: 100px;
+}
+.btn-primary{
+    color: var(--white);
+    background-color: var(--secondary);
+    border-radius: 60px;
+    font-family: 'mont-bold';
+    text-align: center;
 }

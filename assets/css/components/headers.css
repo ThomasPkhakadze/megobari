@@ -46,12 +46,9 @@
     opacity: 1;
     font-family: 'mont-semiBold'; 
 }
-.order-now-btn{
-    color: var(--white);
-    background-color: var(--secondary);
-    border-radius: 60px;
-    padding: 11px 39px 12px 38px;
-    font-family: 'mont-bold';
+.btn-order-now{    
+    padding: 11px 0 12px;
     font-size: 14px;
     line-height: 19px;
+    width: 165px;
 }
