@@ -19,13 +19,13 @@
     display: inline-block;
 }
 .about-us > .title > span:after{
-    content: url('../img/magic-underline.svg');
+    content: url('../../img/magic-underline.svg');
     position: absolute;
     bottom: -21px;
     left: -21px;
 }
 .about-us > .title > span:before{
-    content: url('../img/curly-arrow.svg');
+    content: url('../../img/curly-arrow.svg');
     position: absolute;
     right: -81px;
     top:0;

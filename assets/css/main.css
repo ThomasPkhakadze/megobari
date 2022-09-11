@@ -10,6 +10,9 @@
 /* About us */
 @import './components/about-us.css';
 
+/* Divider */
+@import './components/divider.css';
+
 /* Responsives */
 @media (max-width:1320px){
     /* About us */
@@ -30,6 +33,19 @@
     .about-us > .title > span:before{
         transform: rotate(224deg) scaleX(-1);
     }
+    /* Divider */
+    .divider{
+        font-size: 14px;
+        padding: 15px 30px;
+        line-height: 24px;
+    }
+    /* .divider > .offer > .img{
+        width: 36px;
+        height: 36px;
+    }
+    .divider > .offer > .img > img{
+        transform: scale(0.7);
+    } */
 }
 
 @media (max-width:1200px){
@@ -46,6 +62,19 @@
     .links li {
         display: inline-block;
         margin-right: 25px;
+    }
+    /* Divider */
+    .offer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .divider > .offer > .img{
+        width: 36px;
+        height: 36px;
+        margin-bottom: 5px;        
+    }
+    .divider > .offer > .img > img{
+        transform: scale(0.7);
     }
 }
 
@@ -160,5 +189,21 @@
     }
     .testimonial > .text{
         padding-right: 68px;
+    }
+    /* Divider */
+    .divider{
+        padding: 11px 0;
+        justify-content: space-around;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .offer .hide{
+        display: none;        
+    }
+    .offer .show{
+        display: inline-block;
+    }
+    .offer:last-child{
+        display: none;
     }
 }
