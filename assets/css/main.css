@@ -44,6 +44,11 @@
     display: flex;
     justify-content: space-between;
 }
+.card:first-child{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .card{
     background-color: #f6f8fcb3;
     border: 1.5px solid var(--secondary);
@@ -228,13 +233,14 @@
         padding: 15px 30px;
         line-height: 24px;
     }
-    /* .divider > .offer > .img{
-        width: 36px;
-        height: 36px;
+    /* Shop */
+    .cards-wrapper{
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    .divider > .offer > .img > img{
-        transform: scale(0.7);
-    } */
+    .card:last-child{
+        margin-top: 35px;
+    }
 }
 
 @media (max-width:1200px){
@@ -328,6 +334,48 @@
         grid-row: 5;
         grid-column: 1/5;
         margin: 0 auto;
+    }
+    /* Shop */
+    .shop > .title{
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .cards-wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 73px;
+    }
+    .card:first-child .guarantee-money-back{
+        display: none;
+    }
+    .card:first-child .img{
+        margin-top: 20px;
+    }
+    .card:first-child .btn-primary{
+        margin-top: unset;
+    }
+    .card:last-child{
+        margin-top: unset;
+    }
+    .card > .title{
+        font-size: 24px;
+        line-height: 29px;
+        font-family: 'mont-regular';
+    }
+    .card > .prices{
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .card > .prices > .new-price{
+        font-family: 'mont-bold';
+    }
+    .card > .prices > .new-price >  span{
+        display: none;
+    }
+    .card > .prices > .old-price{
+        font-family: 'regular';
     }
 }
 
