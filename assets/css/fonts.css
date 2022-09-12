@@ -18,3 +18,7 @@
   font-family: mont-heavy;
   src: url('/assets/fonts/Mont-Heavy.otf');
 }
+@font-face{
+  font-family: mont-light;
+  src: url('/assets/fonts/Mont-Light.otf')
+}
