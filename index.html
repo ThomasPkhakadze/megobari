@@ -15,7 +15,7 @@
     </div>
     
     <!-- Header -->
-    <div class="header main-padding">
+    <div class="header main-padding" id="navbar">
         <div class="logo ">
             <img src="./assets/img/header-logo.svg" alt="">
         </div>
@@ -459,11 +459,11 @@
                 document.getElementById(`img_${id}`).classList.remove('rotate');
             }else{
                 document.getElementById(`img_${id}`).classList.add('rotate');
-                // document.getElementById(`img_${id}`).classList.add('rotate-reverse');
                 answer.classList.add('visible')
             }
         }
     </script>
+    <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/slider.js"></script>
 </body>
 </html>

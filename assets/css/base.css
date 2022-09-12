@@ -38,3 +38,10 @@
     font-family: 'mont-semiBold';
     margin: 24px 0 10px;
 }
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5fdff;
+}
