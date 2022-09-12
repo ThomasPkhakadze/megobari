@@ -40,17 +40,6 @@
                 }
                 paginationWrapper.appendChild(pagination);
             }
-            // console.log(Math.ceil(overflow/slideWidth))
         }         
-        // console.log(checkForOverflow());        
-        window.addEventListener('resize', () =>  {
-            // console.log(checkForOverflow());        
-        })
-        // let paginations = document.getElementsByClassName("pagination");
-        // for(let i = 0; i < paginations.length; i++){
-        //     paginations[i].addEventListener("click", () => {
-
-        //     })
-        // }
     })
 })()

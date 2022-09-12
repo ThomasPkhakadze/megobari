@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megobari Test</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <script src="./assets/js/dropdown.js"></script>
 </head>
 <body>
     <!-- Upper Header -->
@@ -403,16 +404,66 @@
     </div>
 
     <!-- FAQs -->
-    <div class="faqs">
-        <div class="title"></div>
-        <div class="img"></div>
-        <div class="faqs">
-            <div class="faq">
-                <div class="question"></div>
-                <div class="answer"></div>
+    <div class="faq main-padding">
+        <p class="title">
+            Frequently Asked  
+            <span>
+                Questions
+            </span>
+        </p>
+        <div class="faq-wrapper">
+            <div class="img">
+                <img src="./assets/img/faq-pic.svg" alt="">
+            </div>
+            <div class="faqs">
+                <div class="single-faq" id="single-faq_1">
+                    <div class="question" id="question_1" onclick="dropdown(event)">
+                        <span id="text_1">How long does the battery last fully charged?</span>
+                        <img id="img_1" src="./assets/img/dropdown-arrow.svg" class="dropdown-toggle"  alt="">
+                    </div>
+                    <div id="answer_1" class="answer">
+                        <span>The MagicMassage™ can last up to 6 hours when it's fully charged.</span>
+                    </div>
+                </div>
+                <div class="single-faq" id="single-faq_2">
+                    <div class="question" id="question_2" onclick="dropdown(event)">
+                        <span id="text_2">How long does the battery last fully charged?</span>
+                        <img id="img_2" src="./assets/img/dropdown-arrow.svg" class="dropdown-toggle"  alt="">
+                    </div>
+                    <div id="answer_2" class="answer">
+                        <span>The MagicMassage™ can last up to 6 hours when it's fully charged.</span>
+                    </div>
+                </div>
+                <div class="single-faq" id="single-faq_3">
+                    <div class="question" id="question_3" onclick="dropdown(event)">
+                        <span id="text_3">How long does the battery last fully charged?</span>
+                        <img id="img_3" src="./assets/img/dropdown-arrow.svg" class="dropdown-toggle"  alt="">
+                    </div>
+                    <div id="answer_3" class="answer">
+                        <span>The MagicMassage™ can last up to 6 hours when it's fully charged.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="/assets/js/script.js"></script>
+    <script>
+        // Code outside this file was not working for some reason....
+        // Not best practice, i am aware
+        // I appologise
+        function dropdown(event){
+            const id = event.target.id.replaceAll('question_', '').replaceAll('img_', '').replaceAll('text_','').replaceAll('single-faq_', '');
+            // rotate arrow icon
+            let answer  = document.getElementById(`answer_${id}`);
+            if(answer.classList.contains('visible')){
+                answer.classList.remove('visible');
+                document.getElementById(`img_${id}`).classList.remove('rotate');
+            }else{
+                document.getElementById(`img_${id}`).classList.add('rotate');
+                // document.getElementById(`img_${id}`).classList.add('rotate-reverse');
+                answer.classList.add('visible')
+            }
+        }
+    </script>
+    <script src="/assets/js/slider.js"></script>
 </body>
 </html>
