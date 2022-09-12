@@ -22,3 +22,19 @@
     font-family: 'mont-bold';
     text-align: center;
 }
+.bg-green{
+    background-color: #57AC73;
+}
+.bg-red{
+    background-color: #AC5780;
+}
+.category{
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--white);
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-family: 'mont-semiBold';
+    margin: 24px 0 10px;
+}

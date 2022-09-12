@@ -14,3 +14,7 @@
   font-family: mont-book;
   src: url('/assets/fonts/Mont-Book.otf');
 }
+@font-face{
+  font-family: mont-heavy;
+  src: url('/assets/fonts/Mont-Heavy.otf');
+}
